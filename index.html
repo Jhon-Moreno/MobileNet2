@@ -102,8 +102,18 @@ y se envuelve alrededor de todo el contenido de la página. -->
   
 </div>
 
-
-
+<!-- Nueva sección para "Integrantes del grupo" -->
+<div>
+  <h2>Integrantes del grupo</h2>
+  <ul>
+    <li>Integrante 1</li>
+    <li>Integrante 2</li>
+    <li>Integrante 3</li>
+    <li>Integrante 4</li>
+    <li>Integrante 5</li>
+  </ul>
+</div>
+<!-- Fin de la sección "Integrantes del grupo" -->
 
 <!-- Imagen de portada -->
 <!-- Esta imagen será reemplazada una vez que se ejecute el código js. -->
@@ -144,43 +154,4 @@ apertura de camara o realice un llamado al método simulateClick()-->
 	<h5 class="space-letters tag-font w3-text-green"><b>- Exactitud: 0.90 </b></h5>
 	<h5 class="space-letters tag-font w3-text-green"><b>- Presición: 0.91 </b></h5>
 	<h5 class="space-letters tag-font w3-text-green"><b>- Sencibilidad: 0.90 </b></h5>
-	<h6 class="space-letters tag-font w3-text-green"><b>El entrenamiento del modelo está basado en el conjunto de 10015 imágenes dermatoscópicas de Harvard, entrenado con Tensorflow</b></h6>
-</div>
-
-<!-- Simulamos clics en estos dos botones de carga inicial. -->
-<div class="hide">
-	<button id='predict-button'>Predict</button>
-</div>
-
-<div class="hide">
-	<input id="image-selector" type="file">
-</div>
-<!--===================================-->
-
-
-	<!-- cargando jQuery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
-
-	</script>
-	<!-- cargando TensorFlow.js -->
-	
-	<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@0.13.3/dist/tf.min.js"> 
-	</script>
-	
-	<!-- NOTA:
-	Cambie el nombre del archivo predict.js (cambie el número) cada vez que modifique el archivo predict.js.
-	Esto forzará al navegador a cargar el predict.js más reciente y no cargar
-	el archivo predict.js que está en la caché del usuario.
-	Hay una solución en stackoverflow que dice que hay que añadir una versión al archivo js. 
-	Pero podría ser que algunos navegadores puedan ignorar la versión. Por lo tanto creo que
-	es más seguro cambiar el nombre del archivo js.-->
-	<script src="jscript/target_classes.js"></script>
-	<script src="jscript/predict100.js"></script> 
-	
-	
-	
-</div> <!-- w3-content -->
-</div>
-</body>
-</html>
-
+	<h6 class="space-letters tag-font w3-text-green"><b>El entrenamiento del modelo está
